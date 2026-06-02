@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Daniel Sigalingging | IT Officer</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Daniel Sigalingging | IT Officer</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"><style>
 
 *{
 margin:0;
@@ -96,14 +89,14 @@ align-items:center;
 }
 
 .about img{
-    width:220px;
-    height:220px;
-    object-fit:cover;
-    border-radius:50%;
-    display:block;
-    margin:auto;
-    border:4px solid #38bdf8;
-    box-shadow:0 0 25px rgba(56,189,248,.4);
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+display:block;
+margin:auto;
+border:4px solid #38bdf8;
+box-shadow:0 0 25px rgba(56,189,248,.4);
 }
 
 .skills{
@@ -118,92 +111,6 @@ padding:20px;
 border-radius:15px;
 text-align:center;
 }
-
-.timeline{
-position:relative;
-max-width:900px;
-margin:auto;
-}
-
-.timeline::after{
-content:'';
-position:absolute;
-width:3px;
-background:#38bdf8;
-top:0;
-bottom:0;
-left:50%;
-}
-
-.job{
-padding:20px 40px;
-position:relative;
-width:50%;
-}
-
-.job.left{
-left:0;
-}
-
-.job.right{
-left:50%;
-}
-
-.card{
-background:#1e293b;
-padding:20px;
-border-radius:15px;
-}
-
-.certs{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.cert{
-background:#1e293b;
-padding:20px;
-border-radius:15px;
-}
-
-footer{
-padding:50px;
-text-align:center;
-background:#020617;
-}
-
-footer a{
-color:#38bdf8;
-text-decoration:none;
-}
-
-@media(max-width:768px){
-
-.about{
-grid-template-columns:1fr;
-text-align:center;
-}
-
-.timeline::after{
-left:20px;
-}
-
-.job{
-width:100%;
-padding-left:60px;
-padding-right:20px;
-}
-
-.job.right,
-.job.left{
-left:0;
-}
-
-.hero h1{
-font-size:2rem;
-}
-
 
 .cert-grid{
 display:grid;
@@ -220,12 +127,23 @@ text-align:center;
 font-size:18px;
 font-weight:bold;
 cursor:pointer;
-transition:0.3s;
+transition:.3s;
 }
 
 .cert-card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 25px rgba(0,255,255,.4);
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 0 30px rgba(56,189,248,.6);
+}
+
+footer{
+padding:50px;
+text-align:center;
+background:#020617;
+}
+
+footer a{
+color:#38bdf8;
+text-decoration:none;
 }
 
 .modal{
@@ -239,12 +157,15 @@ height:100%;
 background:rgba(0,0,0,.95);
 justify-content:center;
 align-items:center;
+animation:fadeIn .3s ease;
 }
 
 .modal img{
 max-width:90%;
 max-height:90%;
 border-radius:15px;
+transform:scale(.7);
+animation:zoomIn .35s ease forwards;
 }
 
 .close-btn{
@@ -256,73 +177,56 @@ color:white;
 cursor:pointer;
 }
 
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
 }
 
-</style>
-</head>
-    
-<body>
+@keyframes zoomIn{
+from{
+transform:scale(.7);
+opacity:0;
+}
+to{
+transform:scale(1);
+opacity:1;
+}
+}
 
-<header>
+@media(max-width:768px){
 
-<div class="hero">
+.about{
+grid-template-columns:1fr;
+text-align:center;
+}
 
-<h1>Daniel Sigalingging, S.Kom</h1>
+.hero h1{
+font-size:2rem;
+}
 
-<h2>IT Officer | Network Administrator | Mining IT Specialist</h2>
+}
 
-<p>
+</style></head><body><header><div class="hero"><h1>Daniel Sigalingging, S.Kom</h1><h2>IT Officer | Network Administrator | Mining IT Specialist</h2><p>
 Profesional IT dengan pengalaman lebih dari 15 tahun dalam
 Network Infrastructure, IT Support, Cybersecurity,
 Mikrotik, Linux, SQL, Cloud Computing, CCTV,
 dan Operasional Pertambangan.
-</p>
-
-<div class="btns">
-
-<a href="https://wa.me/6285277831186" class="btn btn-primary">
+</p><div class="btns"><a href="https://wa.me/6285277831186" class="btn btn-primary">
 WhatsApp Saya
-</a>
-
-<a href="IT-DANIEL_SIGALINGGING.pdf" class="btn btn-outline">
-Download CV
+</a><a href="https://wa.me/6285277831186?text=Halo%20Pak%20Daniel,%20saya%20ingin%20meminta%20CV%20Anda."
+class="btn btn-outline">
+Minta CV via WhatsApp
 </a>
 
 <a href="https://linkedin.com/in/daniel-sapuleka" class="btn btn-outline">
 LinkedIn
-</a>
-
-</div>
-
-</div>
-
-</header>
-
-<section>
-
-<h2 class="title">Tentang Saya</h2>
-
-<div class="about">
-    <img src="foto.jpg" alt="Daniel Sigalingging">
-
-    <div>
-        <p>
-        Berpengalaman mengelola infrastruktur IT, jaringan,
-        server, troubleshooting, CCTV, sistem operasional
-        tambang, dan dukungan teknis perusahaan.
-        </p>
-    </div>
-</div>
-
-</section>
-
-<section>
-
-<h2 class="title">Keahlian</h2>
-
-<div class="skills">
-
-<div class="skill">Network Administration</div>
+</a></div></div></header><section><h2 class="title">Tentang Saya</h2><div class="about"><img src="foto.jpg" alt="Daniel Sigalingging"><div>
+<p>
+Berpengalaman mengelola infrastruktur IT, jaringan,
+server, troubleshooting, CCTV, sistem operasional
+tambang, dan dukungan teknis perusahaan.
+</p>
+</div></div></section><section><h2 class="title">Keahlian</h2><div class="skills"><div class="skill">Network Administration</div>
 <div class="skill">Mikrotik RouterOS</div>
 <div class="skill">Cybersecurity</div>
 <div class="skill">Linux</div>
@@ -331,117 +235,15 @@ LinkedIn
 <div class="skill">Technical Support</div>
 <div class="skill">IT Infrastructure</div>
 <div class="skill">CCTV System</div>
-<div class="skill">Troubleshooting</div>
+<div class="skill">Troubleshooting</div></div></section><section><h2 class="title">Pengalaman Profesional</h2><div style="background:#1e293b;padding:30px;border-radius:15px;text-align:center;max-width:800px;margin:auto;">🔒 Informasi pengalaman kerja tersedia atas permintaan dan hanya dibagikan kepada recruiter atau perusahaan yang berkepentingan.
 
-</div>
-
-</section>
-
-<section>
-
-<h2 class="title">Pengalaman Kerja</h2>
-
-<div class="timeline">
-
-<div class="job left">
-<div class="card">
-<h3>PT Samudera Mulia Abadi</h3>
-<p>IT Officer</p>
-<p>2024 - 2026</p>
-</div>
-</div>
-
-<div class="job right">
-<div class="card">
-<h3>PT Arkananta Apta Pratista</h3>
-<p>IT Support Officer</p>
-<p>2023 - 2024</p>
-</div>
-</div>
-
-<div class="job left">
-<div class="card">
-<h3>Yaspend Putrajaya</h3>
-<p>IT Coordinator</p>
-<p>2015 - 2020</p>
-</div>
-</div>
-
-<div class="job right">
-<div class="card">
-<h3>PT Infomedia Nusantara</h3>
-<p>Technical Support</p>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<section id="certificates">
-
-<h2 class="title">Sertifikasi</h2>
-
-<div class="cert-grid">
-
-<div class="cert-card" onclick="openCert('img/google-cybersecurity.jpg')">
-🔐 Google Cybersecurity
-</div>
-
-<div class="cert-card" onclick="openCert('img/google-ai.jpg')">
-🤖 Google AI Essentials
-</div>
-
-<div class="cert-card" onclick="openCert('img/dta-computer.jpg')">
-💻 Computer Operator Technician
-</div>
-
-<div class="cert-card" onclick="openCert('img/dta-network.jpg')">
-🌐 Associate Network Administrator
-</div>
-
-<div class="cert-card" onclick="openCert('img/alibaba-security.jpg')">
-☁️ Alibaba Cloud Security
-</div>
-
-<div class="cert-card" onclick="openCert('img/telkom-certified.jpg')">
-📞 Telkom Certified Customer Care
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<h3>Hubungi Saya</h3>
-
-<p>Email : daniel.code86@gmail.com</p>
-
-<p>WhatsApp : 085277831186</p>
-
-<p>
+</div></section><section id="certificates"><h2 class="title">Sertifikasi</h2><div class="cert-grid"><div class="cert-card" onclick="openCert('img/google-cybersecurity.jpg')">🔐 Google Cybersecurity</div><div class="cert-card" onclick="openCert('img/google-ai.jpg')">🤖 Google AI Essentials</div><div class="cert-card" onclick="openCert('img/dta-computer.jpg')">💻 Computer Operator Technician</div><div class="cert-card" onclick="openCert('img/dta-network.jpg')">🌐 Associate Network Administrator</div><div class="cert-card" onclick="openCert('img/alibaba-security.jpg')">☁️ Alibaba Cloud Security</div><div class="cert-card" onclick="openCert('img/telkom-certified.jpg')">📞 Telkom Certified Customer Care</div></div></section><footer><h3>Hubungi Saya</h3><p>Email : daniel.code86@gmail.com</p><p>WhatsApp : 085277831186</p><p>
 <a href="https://linkedin.com/in/daniel-sapuleka">
 LinkedIn Profile
 </a>
-</p>
+</p><br><p>© 2026 Daniel Sigalingging</p></footer><div id="certModal" class="modal"><span class="close-btn" onclick="closeCert()">×</span>
 
-<br>
-
-<p>© 2026 Daniel Sigalingging</p>
-
-</footer>
-<div id="certModal" class="modal">
-
-<span class="close-btn" onclick="closeCert()">
-&times;
-</span>
-
-<img id="certImage">
-
-</div>
-
-<script>
+<img id="certImage"></div><script>
 
 function openCert(img){
 document.getElementById("certModal").style.display="flex";
@@ -460,8 +262,11 @@ modal.style.display="none";
 }
 }
 
-</script>
+document.addEventListener("keydown", function(e){
+if(e.key==="Escape"){
+closeCert();
+}
+});
 
-    
-</body>
+</script></body>
 </html>
