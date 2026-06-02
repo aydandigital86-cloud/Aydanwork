@@ -205,18 +205,183 @@ font-size:2rem;
 }
 
 }
+/* ===== PREMIUM HERO ===== */
 
-</style></head><body><header><div class="hero"><h1>Daniel Sigalingging, S.Kom</h1><h2>IT Officer | Network Administrator | Mining IT Specialist</h2><p>
-IT Officer dan Network Administrator berpengalaman dalam pengelolaan infrastruktur IT, jaringan komputer, server, keamanan sistem, dan teknologi cloud. Memiliki rekam jejak dalam mendukung operasional perusahaan serta lingkungan pertambangan melalui solusi teknologi yang andal dan efisien.
+header{
+    min-height:100vh;
+    position:relative;
+    overflow:hidden;
+    background:#0f172a;
+}
 
-</a><a href="https://wa.me/6285277831186?text=Halo%20Pak%20Daniel,%20saya%20ingin%20meminta%20CV%20Anda."
-class="btn btn-outline">
-  Request CV
+.hero{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    font-weight:700;
+}
+
+.hero h2{
+    color:#38bdf8;
+    margin:15px 0;
+}
+
+.typing{
+    color:#38bdf8;
+    border-right:3px solid #38bdf8;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:
+    typing 5s steps(40,end) infinite,
+    blink .7s infinite;
+}
+
+@keyframes typing{
+    0%{width:0}
+    50%{width:100%}
+    90%{width:100%}
+    100%{width:0}
+}
+
+@keyframes blink{
+    50%{
+        border-color:transparent;
+    }
+}
+
+/* NETWORK ANIMATION */
+
+.network{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+.node{
+    position:absolute;
+    width:8px;
+    height:8px;
+    background:#38bdf8;
+    border-radius:50%;
+    box-shadow:0 0 15px #38bdf8;
+    animation:pulse 3s infinite;
+}
+
+.line{
+    position:absolute;
+    height:1px;
+    background:rgba(56,189,248,.2);
+    transform-origin:left center;
+}
+
+@keyframes pulse{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.8);
+    }
+}
+
+/* GLOW */
+
+.glow{
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#38bdf8;
+    border-radius:50%;
+    filter:blur(180px);
+    opacity:.08;
+}
+
+.glow1{
+    top:-150px;
+    left:-150px;
+}
+
+.glow2{
+    bottom:-150px;
+    right:-150px;
+}
+  
+
+</style>
+
+</head>
+  
+  <body>
+    
+    <header>
+
+<div class="network">
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<div class="node" style="top:20%;left:15%;"></div>
+<div class="node" style="top:35%;left:40%;"></div>
+<div class="node" style="top:25%;left:70%;"></div>
+<div class="node" style="top:65%;left:20%;"></div>
+<div class="node" style="top:70%;left:80%;"></div>
+
+<div class="line"
+style="top:22%;left:15%;width:28%;transform:rotate(18deg);">
+</div>
+
+<div class="line"
+style="top:35%;left:40%;width:30%;transform:rotate(-15deg);">
+</div>
+
+<div class="line"
+style="top:38%;left:40%;width:22%;transform:rotate(50deg);">
+</div>
+
+<div class="line"
+style="top:68%;left:20%;width:60%;transform:rotate(0deg);">
+</div>
+
+</div>
+
+<div class="hero">
+
+<h1>Daniel Sigalingging, S.Kom</h1>
+
+<h2 class="typing">
+IT Officer | Network Administrator | Cybersecurity
+</h2>
+
+<p>
+Profesional IT dengan pengalaman dalam Network Infrastructure,
+System Administration, Cybersecurity, Cloud Computing,
+Linux Server, Mikrotik, CCTV, SQL Database, dan dukungan
+operasional industri pertambangan.
+</p>
+
+<div class="btns">
+
+<a href="https://wa.me/6285277831186"
+class="btn btn-primary">
+Hubungi Saya
 </a>
 
-<a href="https://linkedin.com/in/daniel-sapuleka" class="btn btn-outline">
+<a href="https://linkedin.com/in/daniel-sapuleka"
+class="btn btn-outline">
 LinkedIn
-</a></div></div></header><section><h2 class="title">Tentang Saya</h2><div class="about"><img src="foto.jpg" alt="Daniel Sigalingging"><div>
+</a>
+
+</div>
+
+</div>
+
+</header>
+    <section><h2 class="title">Tentang Saya</h2><div class="about"><img src="foto.jpg" alt="Daniel Sigalingging"><div>
 <p>
 Berpengalaman mengelola infrastruktur IT, jaringan,
 server, troubleshooting, CCTV, sistem operasional
@@ -264,5 +429,6 @@ closeCert();
 }
 });
 
-</script></body>
+</script>
+</body>
 </html>
