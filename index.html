@@ -1,10 +1,375 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Aydan Works</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daniel Sigalingging | IT Officer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.hero h2{
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+opacity:.9;
+}
+
+.btns{
+margin-top:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+margin:10px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn-primary{
+background:#38bdf8;
+color:#000;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+}
+
+.btn-outline{
+border:2px solid #38bdf8;
+color:#38bdf8;
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+margin-bottom:50px;
+font-size:2rem;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+max-width:280px;
+border-radius:20px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+.timeline{
+position:relative;
+max-width:900px;
+margin:auto;
+}
+
+.timeline::after{
+content:'';
+position:absolute;
+width:3px;
+background:#38bdf8;
+top:0;
+bottom:0;
+left:50%;
+}
+
+.job{
+padding:20px 40px;
+position:relative;
+width:50%;
+}
+
+.job.left{
+left:0;
+}
+
+.job.right{
+left:50%;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+}
+
+.certs{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.cert{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+}
+
+footer{
+padding:50px;
+text-align:center;
+background:#020617;
+}
+
+footer a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.about{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.timeline::after{
+left:20px;
+}
+
+.job{
+width:100%;
+padding-left:60px;
+padding-right:20px;
+}
+
+.job.right,
+.job.left{
+left:0;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+}
+
+</style>
 </head>
+
 <body>
-  <h1>Aydan Works Aktif 🚀</h1>
-  <p>Website sedang dalam pengembangan.</p>
+
+<header>
+
+<div class="hero">
+
+<h1>Daniel Sigalingging, S.Kom</h1>
+
+<h2>IT Officer | Network Administrator | Mining IT Specialist</h2>
+
+<p>
+Profesional IT dengan pengalaman lebih dari 15 tahun dalam
+Network Infrastructure, IT Support, Cybersecurity,
+Mikrotik, Linux, SQL, Cloud Computing, CCTV,
+dan Operasional Pertambangan.
+</p>
+
+<div class="btns">
+
+<a href="https://wa.me/6285277831186" class="btn btn-primary">
+WhatsApp Saya
+</a>
+
+<a href="IT-DANIEL_SIGALINGGING.pdf" class="btn btn-outline">
+Download CV
+</a>
+
+<a href="https://linkedin.com/in/daniel-sapuleka" class="btn btn-outline">
+LinkedIn
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section>
+
+<h2 class="title">Tentang Saya</h2>
+
+<div class="about">
+
+<img src="foto.jpg">
+
+<div>
+
+<p>
+Berpengalaman mengelola infrastruktur IT, jaringan,
+server, troubleshooting, CCTV, sistem operasional
+tambang, dan dukungan teknis perusahaan.
+Fokus pada stabilitas sistem, keamanan jaringan,
+dan efisiensi operasional bisnis.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Keahlian</h2>
+
+<div class="skills">
+
+<div class="skill">Network Administration</div>
+<div class="skill">Mikrotik RouterOS</div>
+<div class="skill">Cybersecurity</div>
+<div class="skill">Linux</div>
+<div class="skill">SQL</div>
+<div class="skill">Cloud Computing</div>
+<div class="skill">Technical Support</div>
+<div class="skill">IT Infrastructure</div>
+<div class="skill">CCTV System</div>
+<div class="skill">Troubleshooting</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Pengalaman Kerja</h2>
+
+<div class="timeline">
+
+<div class="job left">
+<div class="card">
+<h3>PT Samudera Mulia Abadi</h3>
+<p>IT Officer</p>
+<p>2024 - 2026</p>
+</div>
+</div>
+
+<div class="job right">
+<div class="card">
+<h3>PT Arkananta Apta Pratista</h3>
+<p>IT Support Officer</p>
+<p>2023 - 2024</p>
+</div>
+</div>
+
+<div class="job left">
+<div class="card">
+<h3>Yaspend Putrajaya</h3>
+<p>IT Coordinator</p>
+<p>2015 - 2020</p>
+</div>
+</div>
+
+<div class="job right">
+<div class="card">
+<h3>PT Infomedia Nusantara</h3>
+<p>Technical Support</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Sertifikasi</h2>
+
+<div class="certs">
+
+<div class="cert">Google AI Essentials</div>
+
+<div class="cert">Foundations of Cybersecurity</div>
+
+<div class="cert">Linux & SQL</div>
+
+<div class="cert">Digital Talent Academy</div>
+
+<div class="cert">Associate Network Administrator</div>
+
+<div class="cert">Mikrotik MTCNA</div>
+
+<div class="cert">Telkom Certified Customer Care Associate</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Hubungi Saya</h3>
+
+<p>Email : daniel.code86@gmail.com</p>
+
+<p>WhatsApp : 085277831186</p>
+
+<p>
+<a href="https://linkedin.com/in/daniel-sapuleka">
+LinkedIn Profile
+</a>
+</p>
+
+<br>
+
+<p>© 2026 Daniel Sigalingging</p>
+
+</footer>
+
 </body>
 </html>
